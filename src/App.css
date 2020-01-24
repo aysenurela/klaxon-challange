@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.buttonsContainer {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contentButton {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #444;
+  opacity: .4
+}
+
+.activeState {
+  opacity: 1
+}
+
+.activeState:hover {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+
+.imageContainer {
+  max-width: 100%;
+  height: auto;
+  width: 33.33333%;
+}
+
+.passButton {
+  opacity: 1;
+  background-color: #fff;
+  color:#38c;
+  border-color: #ccc;
+  font-weight: 700;
+}
+
+.passButton:hover {
+  background-color: #e6e6e6
+}
+
+
+/* MULTIPLE CHOICES QUESTION */
+.answers {
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+.answerListItem {
+  list-style: none;
+}
+
+.answerButton {
+  opacity: 1;
+  color: #333;
+  border-color: #ccc;
+  background-color: #fff;
+  width: 100%;
+}
+
+.selectedAnswer {
+  background-color: #ccc;
+}
+
+.isTrue {
+  color: #fff;
+  background-color: #079c07;
+}
+
+.notSelectedAnswer {
+  opacity: 0.3;
+}
+
+.submitAnswer {
+  width: 100%;
+  opacity: 1;
+  background-color: #333;
+  color: #fff;
 }
